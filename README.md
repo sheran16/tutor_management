@@ -1,0 +1,1 @@
+Private Tutor Management System — A web-based platform built using HTML, CSS, PHP, and MySQL that helps tutors efficiently manage students, schedules, and feedback. It includes features for student registration, progress tracking, feedback submission, and tutor responses, streamlining communication and record-keeping in private tutoring sessions.
