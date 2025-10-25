@@ -1,0 +1,89 @@
+.form-container {  /*sign up page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 15px;
+  border: 3px solid #003366;
+}
+
+.signup-form {
+  background: #fff;
+  padding: 8px;
+  border-radius: 15px;
+  border: 2px solid #003366;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  width: 580px;
+}
+
+.signup-form h2 {
+  color: #003366;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-container label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin: 3px 0 5px;
+  color: #003366;
+  font-size: 14px;
+}
+
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 10px;
+  background: hsl(140, 100%, 29%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup-form button:hover {
+  background: #444;
+}
+/* Error Messages */
+.error-message {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: none;
+  font-weight: bold;
+}
+
+.error-message.show {
+  display: block;
+}
+
+/* Input Error State */
+.input-error {
+  border: 2px solid #e74c3c !important;
+  background-color: #fdf2f2;
+}
+
+
+/* Form Input Focus States */
+.signup-form input:focus,
+.signup-form select:focus {
+  outline: none;
+  border-color: #003366;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 51, 102, 0.2);
+  transform: translateY(-1px);
+}

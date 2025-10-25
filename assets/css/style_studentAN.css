@@ -1,0 +1,146 @@
+/* Student Announcements Dashboard Styles */
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-image: url('/tutor_management/student_Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.main-content h2 {
+    color: #070736 !important;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+    font-size: 2.2em;
+}
+
+.main-content p {
+    color: #45458e !important;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+/* All Announcements Container */
+.all-announcements-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(78, 78, 148, 0.3);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.all-announcements-container h3 {
+    color: #4e4e94;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    border-bottom: 2px solid #4e4e94;
+    padding-bottom: 10px;
+}
+
+/* Announcements List */
+.announcements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Announcement Cards */
+.announcement-card {
+    background: #cfcfe8;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.announcement-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.announcement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.announcement-header h4 {
+    color: #4e4e94;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.announcement-date {
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f8f9fa;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.announcement-body {
+    margin-bottom: 15px;
+}
+
+.announcement-body p {
+    color: #333 !important;
+    text-shadow: none !important;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.announcement-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.announcement-time {
+    color: #6c757d;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    
+    .announcement-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .announcement-date {
+        align-self: flex-end;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    
+    .announcement-card {
+        padding: 15px;
+    }
+    
+    .announcement-header h4 {
+        font-size: 1.1em;
+    }
+    
+    .announcement-body p {
+        font-size: 15px;
+    }
+}
+

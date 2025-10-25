@@ -1,0 +1,87 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* footer down */
+  padding: 20px;
+}
+
+/* Background */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+}
+
+/* TABLE STYLES */
+.table-container {
+  max-width: 1150px;
+  margin: 0 auto 40px;
+  background: #cfcfe8;
+  padding: 15px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.table-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  padding: 12px;
+  border: 1px solid #003366;
+  text-align: center;
+}
+
+.table-container th {
+  background: #a1a1ce;
+  color: #fff;
+}
+
+.view-btn,
+.update-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 2px;
+  color: #fff;
+}
+
+.view-btn {
+  background: #000000;
+}
+
+.update-btn {
+  background: #D6730F;
+}
+
+.view-btn:hover {
+  background: #000000;
+}
+
+.update-btn:hover {
+  background: #D6730F;
+}
+
+/* FOOTER */
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 10px;
+  background: #222;
+  color: #fff;
+}
+
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse*/

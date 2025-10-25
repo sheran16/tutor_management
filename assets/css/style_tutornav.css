@@ -1,0 +1,193 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #0a0800;  
+}
+
+/* Circle Buttons (with images) */
+.circle-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0;
+}
+
+.circle-btn img {
+  width: 20px;   /* fixed size */
+  height: 20px;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+.circle-btn:hover {
+  background: #e0e0e0;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  min-width: 150px;
+  list-style: none;
+  z-index: 10;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #003366;
+  display: block;
+}
+
+.dropdown-menu li hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 5px 0;
+}
+
+.dropdown-menu li a:hover {
+  background: #f5f5f5;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+body {
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content { /* Main content */
+  min-height: 85vh;
+  background: transparent;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.welcome {
+  margin-bottom: 40px;
+  color: #555;
+  padding-bottom: 90px;
+}
+
+.welcome h4 {
+  color: #003366;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  color: #666;
+  font-size: 16px;
+}
+
+.dashboard { /* Dashboard Cards */
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.card-btn {
+  width: 200px;
+  height: 120px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-decoration: none; 
+}
+
+.card-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Button Colors */
+.red { background-color: #e74c3c; }
+.green { background-color: #27ae60; }
+.blue { background-color: #3498db; }
+.purple { background-color: #8e44ad; }
+.black { background-color: #2c3e50; }
+
+.footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;   /* space between icon and text */
+}
+
+.footer-icon {
+  width: 24px; /* to match nav icon */
+  height: 24px;
+  object-fit: contain;
+  display: inline-block;
+}

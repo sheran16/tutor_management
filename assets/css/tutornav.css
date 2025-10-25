@@ -1,0 +1,107 @@
+/* Additional styles for tutornav.php */
+
+/* Enhanced Welcome section */
+.welcome {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px 40px;
+  border-radius: 12px;
+  margin: 30px auto 50px;
+  max-width: 750px;
+  box-shadow: 0 6px 20px rgba(0, 51, 102, 0.15);
+  border-left: 5px solid #003366;
+}
+
+.welcome h4 {
+  color: #003366;
+  font-size: 30px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.welcome p {
+  color: #555;
+  font-size: 17px;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Enhanced dashboard layout */
+.dashboard {
+  gap: 35px;
+  margin-top: 30px;
+}
+
+/* Improved button styling */
+.card-btn {
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.card-btn:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Brighter professional tutor-themed button colors */
+.green { 
+  background-color: #27ae60; /* Brighter green while still professional */
+}
+
+.green:hover { 
+  background-color: #229954; 
+}
+
+.blue { 
+  background-color: #2980b9; /* Brighter blue that complements header */
+}
+
+.blue:hover { 
+  background-color: #1e6091; 
+}
+
+.red { 
+  background-color: #c0392b; /* Brighter red but not too flashy */
+}
+
+.red:hover { 
+  background-color: #a93226; 
+}
+
+.purple { 
+  background-color: #8e44ad; /* Vibrant purple that still looks professional */
+}
+
+.purple:hover { 
+  background-color: #7d3c98; 
+}
+
+.black { 
+  background-color: #34495e; /* Brighter dark gray instead of pure header color */
+}
+
+.black:hover { 
+  background-color: #2c3e50; 
+}
+
+/* Add subtle animation to main content */
+.main-content {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

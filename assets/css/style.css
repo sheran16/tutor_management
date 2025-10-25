@@ -1,0 +1,218 @@
+/*=============================tutor_dashboard.php===============================================*/
+
+/* Reset browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tutor Dashboard Background */
+body.tutor-dashboard {
+    background: url("../../tutorBackground.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-color: #f2f2f7;
+}
+
+/* Containers */
+.main-content,
+.quiz-card {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Titles */
+.page-title {
+    text-align: center;
+    color: #313178;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Grade Dropdown */
+.grade-select {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.grade-select select {
+    padding: 8px;
+    border: 1px solid #7474b0;
+    border-radius: 5px;
+    background-color: #cfcfe8;
+    color: #313178;
+}
+
+/* Quiz Card */
+.quiz-card {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    background: #ffffff;
+    border: 3px solid #4e4e94;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 2px 2px 5px rgba(49,49,120,0.2);
+}
+
+.quiz-card h3 {
+    font-size:larger;
+    color: #313178;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.quiz-card label {
+    font-weight: 600;
+    color: #4e4e94;
+}
+
+/* Container for Quiz No and Total Marks side by side */
+.form-row-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-row-container .form-row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-row-container .form-row label {
+    font-weight: 600;
+    color: #4e4e94;
+    margin-bottom: 0;
+    width: 100px;
+    flex-shrink: 0;
+}
+
+.form-row-container .form-row input {
+    flex: 1;
+}
+
+/* Question rows - side by side */
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    width: 120px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #4e4e94;
+}
+
+/* Inputs inside quiz-card */
+.quiz-card input[type="text"] {
+    flex: 1;                /* long question input */
+    padding: 10px;
+    border: 1px solid #7474b0;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #f9f9ff;
+    color: #313178;
+}
+
+.quiz-card input[type="number"] {
+    width: 120px;           /* marks input same as total marks */
+    padding: 10px;
+    border: 1px solid #7474b0;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #f9f9ff;
+    color: #313178;
+}
+
+/* Form Buttons */
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+.btn-delete {
+    background-color: #d86158; /* red */
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-delete:hover {
+    background-color: darkred;
+}
+
+.btn-create {
+    background-color: #43B412;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-publish {
+    background-color: #F09943;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-create:hover,
+.btn-publish:hover {
+    opacity: 0.85;
+}
+
+/* Dashboard Navigation Buttons */
+.dashboard-nav-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-all {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-submissions {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-all:hover,
+.btn-submissions:hover {
+    background-color: #8e44ad;
+}
+
+

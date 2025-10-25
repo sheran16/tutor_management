@@ -1,0 +1,81 @@
+/*========home page=============*/
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.main-heading {
+  font-family: 'Poppins', sans-serif;
+  color: #0a3d62;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Hero section */
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 20px 100px; 
+  background: transparent; 
+}
+
+
+/* Containers */
+.role-card {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  color: white;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Student container */
+.student {
+  background-color: #7474b0; 
+}
+
+/* Tutor container */
+.tutor {
+  background-color: #4e4e94;
+}
+
+/* Signup button */
+.btn-signup {
+  background-color: #313178; 
+  color: white;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn-signup:hover {
+  background-color: #1f1f5c;
+  color: #fff;
+}
+
+/* About section */
+.about {
+  padding: 60px 20px;
+  font-size: 20px;
+  font-weight:600;
+  line-height: 1.6;
+  color: #2e1d5b;
+}
+
+.about img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}

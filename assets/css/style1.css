@@ -1,0 +1,342 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #0a0800;  
+}
+
+/* Circle Buttons (with images) */
+.circle-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0;
+}
+
+.circle-btn img {
+  width: 20px;   /* fixed size */
+  height: 20px;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+.circle-btn:hover {
+  background: #e0e0e0;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  min-width: 150px;
+  list-style: none;
+  z-index: 10;
+}
+.dropdown-menu li {
+  padding: 10px;
+}
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #003366;
+  display: block;
+}
+.dropdown-menu li hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 5px 0;
+}
+
+.dropdown-menu li a:hover {
+  background: #f5f5f5;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+body {
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content { /* Main content */
+  min-height: 85vh;
+  background: transparent;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.welcome {
+  margin-bottom: 40px;
+  color: #555;
+  padding-bottom: 90px;
+}
+.dashboard { /* Dashboard Cards */
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.card-btn {
+  width: 200px;
+  height: 120px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-decoration:none; 
+}
+.card-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+.red { background-color: #e74c3c; }
+.green { background-color: #27ae60; }
+.blue { background-color: #3498db; }
+
+.login-container { /*login button */
+  flex: 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border: 1px solid #003366;
+ /* border-color: #0a0800;*/
+  border-radius: 4px;
+}
+
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 420px;
+  text-align: center;
+  border-color: #0a0800;
+  border-radius: 4px;
+}
+
+.login-box h2 {
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+.login-box p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.login-box label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background: #003366;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-box button:hover {
+  background: #0055aa;
+}
+
+/* Student Login Box Styling */
+.login-box.student {
+  border: 3px solid #003366; /*  border  */
+}
+
+.login-box.student h2 {
+  color: #003366; 
+}
+
+.login-box.student button {
+  background: #003366; 
+}
+
+.login-box.student button:hover {
+  background: #004488; 
+}
+
+/* Tutor Login Box Styling */
+.login-box.tutor {
+  border: 3px solid #4e4e94; /* border */
+}
+
+.login-box.tutor h2 {
+  color: #4e4e94; 
+}
+
+.login-box.tutor button {
+  background: #4e4e94; 
+}
+
+.login-box.tutor button:hover {
+  background: #8e44ad; 
+}
+
+.form-container {  /*sign up page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 15px;
+  border: 1px solid #003366;
+}
+
+.signup-form {
+  background: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  border-color: #003366;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  width: 580px;
+}
+
+.signup-form h2 {
+  color: #003366;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-container label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin: 3px 0 5px;
+}
+
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 10px;
+  background: hsl(140, 100%, 29%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup-form button:hover {
+  background: #444;
+}
+
+.feedback-btn{ /* fd his */
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  background: #4e4e94;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+  z-index: 999;
+}
+
+.feedback-btn:hover{
+  background: #7474b0;
+}
+
+.footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;   /* icon and text space */
+}
+
+.footer-icon {
+  width: 24px; /* to match nav icon */
+  height: 24px;
+  object-fit: contain;
+  display: inline-block;
+}

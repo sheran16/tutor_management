@@ -1,0 +1,218 @@
+.submissions-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.back-button {
+    background: #34495e;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background: #2c3e50;
+    color: white;
+    text-decoration: none;
+}
+
+.submissions-header {
+    margin-bottom: 30px;
+}
+
+#gradeFilter {
+    margin: 20px 0;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #7474b0;
+    border-radius: 5px;
+    background-color: #cfcfe8;
+    color: #313178;
+}
+
+.submission-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgb(56, 54, 88);
+    border: 2px solid #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.submission-table th {
+    background-color: #a1a1ce;
+    color: #313178;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #000000;
+}
+
+.submission-table td {
+    background-color: #cfcfe8;
+    padding: 12px 15px;
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+.submission-table tr:hover td {
+    background-color: #bdbddb;
+}
+
+.submission-table button {
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.submission-table button:hover {
+    background: #219a52;
+}
+
+/* Answer Sheet Styles */
+.answer-sheet {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.answer-sheet-content {
+    background: white;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.btn-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-close:hover {
+    background: #c0392b;
+}
+
+.answer-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #8a979f;
+}
+
+.answer-item p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.answer-item p strong {
+    margin-right: 8px;
+}
+
+.answer-item label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.question-marks {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.total-marks-section {
+    background: #e8f4fd;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.total-marks {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.btn-submit {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.btn-submit:hover {
+    background: #219a52;
+}
+
+.no-submissions {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Submission questions styling for legacy compatibility */
+#submission-questions p {
+    margin: 5px 0;      /* small spacing between lines */
+    text-align: left;   /* force left alignment */
+}
+
+#submission-questions input.question-marks {
+    width: 50px;        /* fixed width so numbers line up */
+    text-align: left;
+}
+
+#submission-questions p strong {
+    display: inline-block;
+    width: 60px;        /* space for "Q:", "Answer:", "Marks:" labels */
+}
+
+

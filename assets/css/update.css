@@ -1,0 +1,99 @@
+.umodal { 
+  position: fixed; 
+  inset: 0; 
+  display: none;
+   z-index: 1000; /*ab elemen*/
+   }
+
+.umodal.is-open { 
+  display: block; 
+}
+
+.umodal-backdrop {
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.umodal-dialog {
+  position: relative;
+  max-width: 600px;
+  width: calc(100% - 40px);
+  margin: 10vh auto;
+  background: #cfcfe8;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.umodal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px; 
+  background: #a1a1ce;
+  color: #fff;
+}
+
+.umodal-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.umodal-body { 
+  padding: 16px;
+  background: #f4f4f9;
+  }
+
+/* form */
+.uform {
+  display: grid;
+  gap: 10px;
+   }
+
+.uform label { 
+  font-weight: 600;
+   color: #374151; 
+  }
+  
+.uform input[type="text"],
+.uform input[type="date"],
+.uform input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.uform select,
+#u_grade {
+  width: 100%;
+  min-width: 180px;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.umodal-actions {
+  display: flex;
+  gap: 8px; 
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.ubtn {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+}
+.ubtn.flat { background: #000000; opacity: 0.85; }
+.ubtn.flat:hover { opacity: 1; }
+.ubtn.save { background: #28a745; }
+.ubtn.save:hover { filter: brightness(0.95); }

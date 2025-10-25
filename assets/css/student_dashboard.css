@@ -1,0 +1,243 @@
+/* Background */
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main wrapper */
+.main-content {
+  flex: 1;
+  padding: 30px 20px;
+}
+
+/* Flex container */
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Left side (grades + quizzes) */
+.left-side {
+  flex: 2;
+}
+
+/* Grade buttons */
+.grade-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.grade-btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #898AC4;
+  color: #f7f5f5;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Quiz container */
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Quiz form */
+.quiz-form {
+  background-color: #fff;
+  padding: 15px;
+  border: 2px solid #4e4e94;
+  border-radius: 10px;
+}
+
+.quiz-form h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.student-id {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.student-id label {
+  font-weight: bold;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.question input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #7474b0;
+  border-radius: 5px;
+}
+
+.marks {
+  font-size: 0.9em;
+  color: #313178;
+}
+
+/* Submit button wrapper */
+.submit-wrapper {
+  display: flex;
+  justify-content: flex-end;  /* move everything to right */
+  align-items: center;        /* align vertically */
+  margin-top: 10px;
+}
+
+/* Already attempted message */
+.already-attempted-msg {
+  color: red;
+  font-weight: bold;
+  margin-right: 10px;   /* space before button */
+  font-size: 14px;
+}
+
+/* Submit button */
+.submit-btn {
+  padding: 8px 20px;
+  background-color: #43B412;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #313178;
+}
+
+/* Progress panel */
+.progress-panel {
+  flex: 1;
+  background-color: #4e4e94;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+/* Quiz result cards */
+.quiz-result-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-left: 4px solid #fff;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.quiz-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.quiz-score {
+  font-size: 13px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+/* Progress bar */
+.progress-bar {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 6px;
+  border-radius: 3px;
+  margin: 6px 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  border-radius: 7px;
+  transition: width 0.3s ease;
+}
+
+.score-excellent .progress-fill {
+  background: linear-gradient(90deg, #4CAF50, #66BB6A);
+}
+
+.score-good .progress-fill {
+  background: linear-gradient(90deg, #8BC34A, #AED581);
+}
+
+.score-average .progress-fill {
+  background: linear-gradient(90deg, #FFC107, #FFD54F);
+}
+
+.score-low .progress-fill {
+  background: linear-gradient(90deg, #F44336, #EF5350);
+}
+
+.percentage {
+  text-align: right;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+/* Summary section */
+.summary-section {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+.summary-label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.summary-value {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+/* No results styling */
+.no-results {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.no-results p {
+  margin: 5px 0;
+}
+
+.no-results-sub {
+  font-size: 13px;
+  opacity: 0.8;
+}
